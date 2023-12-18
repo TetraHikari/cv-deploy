@@ -24,6 +24,7 @@ export const App = () => {
         </div>
       <div className='Content h-full w-full flex xxxs:max-xxs:justify-start justify-center lg:items-start` pl-10 pr-10' >
         <Routes>
+          <Route path="/cv-deploy/" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/about-me" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
