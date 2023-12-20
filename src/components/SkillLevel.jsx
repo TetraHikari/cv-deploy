@@ -16,12 +16,13 @@ const SkillLevel = ({ skill, level, pic, maxLevel }) => {
     <div className="flex items-center mb-4">
         <FadeIn delay="100">
       <div className='flex flex-row'>
-        <div className='h-full flex items-middle xxxs:mt-1 sm:mt-2'>
+      {/* xxxs:mt-1 sm:mt-2 */}
+        <div className='h-full flex items-middle '>
         <img src={pic} alt={skill} className="xxxs:w-6 xxxs:h-6 sm:h-7 sm:w7 lg:h-7 lg:w-7 mr-2 " />
         </div>
       <div className='flex flex-col' >
       <span className="text-gray-700 font-semibold mr-2 w-20 xxxs:text-sm sm:text-xl lg:text-2xl">{skill}</span>
-      <div className="flex">
+      {/* <div className="flex">
         {[...Array(maxLevel)].map((_, i) => (
           <div
             key={i}
@@ -31,7 +32,7 @@ const SkillLevel = ({ skill, level, pic, maxLevel }) => {
             style={{ transitionDelay: `${i * 0.1}s` }} // Adjust the delay between dots
           />
         ))}
-      </div>
+      </div> */}
       </div>
       </div>
         </FadeIn>
